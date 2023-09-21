@@ -264,48 +264,7 @@ header .header-contant img{
             font-family: 'Poppins' , sans-serif;
         }
         
-        #skills::before {
-            z-index: 1000;
-            content: '';
-            position: absolute;
-            left: 2%;
-            top: 5%;
-            width: 120px;
-            height: 120px;
-            border: 10px solid var(--themeColor);
-            border-radius: 50%;
-            background-color: var(--shadowColor);
-            box-shadow: 0 0 20px var(--shadowColor);
-            animation: CircleMove1 10s infinite ;
-        }
 
-        @keyframes CircleMove1 {
-            0%, 100% {
-                transform: translateX(0) translateY(0) scale(1);
-                opacity: 1;
-                background-color: var(--themeColor);
-                box-shadow: 0 0 20px var(--shadowColor);
-            }
-            25% {
-                transform: translateX(50px) translateY(50px) scale(1.2);
-                opacity: 0.75;
-                background-color: var(--secondary-color);
-                box-shadow: 0 0 20px var(--shadowColor);
-            }
-            50% {
-                transform: translateX(100px) translateY(0) scale(1.4);
-                opacity: 0.5;
-                background-color: var(--themeColor);
-                box-shadow: 0 0 20px var(--shadowColor);
-            }
-            75% {
-                transform: translateX(150px) translateY(50px) scale(1.6);
-                opacity: 0.25;
-                background-color: var(--secondary-color);
-                box-shadow: 0 0 20px var(--shadowColor);
-            }
-        }
-        
         #skills::before {
             content: '';
             position: absolute;
