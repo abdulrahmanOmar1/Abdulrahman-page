@@ -466,9 +466,8 @@ header .header-contant img{
         
 
         @media only screen and (max-width: 600px) {
-            nav {
-                margin-top: 0;
-                padding-top: 0;
+            .nav-item-not-shown {
+                display: none;
             }
         }
     /* skills end*/
