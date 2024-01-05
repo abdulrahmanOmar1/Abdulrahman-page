@@ -467,7 +467,7 @@ header .header-contant img{
 
         @media only screen and (max-width: 600px) {
             .nav-item-not-shown {
-                display: none;
+                display: -moz-deck;
             }
         }
     /* skills end*/
