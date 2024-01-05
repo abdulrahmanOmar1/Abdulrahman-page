@@ -42,6 +42,121 @@ header {
     height: 100vh;
 }
 
+:root {
+    --primary-color: #033b4a;
+    --secondary-color: #20c997;
+    --gray: #4a4a4d;
+    --bg-primary: #ecf0f3;
+    --bodyColor: #222931;
+    --bgColor: #f4f4f4;
+    --textColor: #eeeeee;
+    --themeColor: #20c997;
+    --shadowColor: #04d898;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Saira', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Add your existing styles here */
+  
+  /* Tablet responsive */
+  @media (max-width: 768px) {
+    /* Add tablet-specific styles here */
+  }
+  
+  /* Mobile */
+  @media (max-width: 528px) {
+    /* Add mobile-specific styles here */
+    header .navbar nav ul {
+      text-align: center;
+    }
+  
+    header .navbar nav ul li {
+      margin: 0 8px;
+    }
+  
+    header .navbar nav ul a {
+      display: block;
+      padding: 10px;
+      margin: 8px 0;
+      text-align: center;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+  
+    header .navbar nav ul a:hover::before {
+      opacity: 0;
+    }
+  
+    header .header-contant {
+      grid-template-columns: 1fr;
+    }
+  
+    header .header-contant .content-text {
+      margin-bottom: 0;
+      margin-top: 1rem;
+    }
+  
+    header .header-contant img {
+      max-width: 250px;
+      margin: auto;
+    }
+  
+    #home .header-contant h1 {
+      font-size: 38px;
+    }
+  
+    #about h2,
+    #skills h2,
+    #porfolio h2,
+    #education h2,
+    #contact h2 {
+      font-size: 30px;
+    }
+  
+    #about .about-content .col-1 h3 {
+      font-size: 20px;
+    }
+  
+    #skills .slill-col {
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    #porfolio .row {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    #contact .row {
+      padding: 1rem;
+    }
+  }
+
 header .navbar {
     background-color:#fff ;
     border-bottom: 1px solid #ccc;

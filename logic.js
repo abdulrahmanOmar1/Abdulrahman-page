@@ -10,10 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     animateSkills();
 
-    // تنفيذ الدالة عند حدوث scroll
     window.addEventListener("scroll", animateSkills);
 
-    // تنفيذ الدالة عند تغيير حجم النافذة
     window.addEventListener("resize", animateSkills);
 });
 
